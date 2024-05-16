@@ -4,7 +4,7 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&";
 const button = document.querySelector('.search button');
 const input = document.querySelector('.search input');
 
-button.addEventListener('click', processWeather);
+button.addEventListener('click', e => processWeather());
 input.addEventListener('keydown', e => {
 	if (e.key === 'Enter') processWeather()
 });
